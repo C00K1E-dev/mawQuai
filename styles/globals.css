@@ -1,0 +1,544 @@
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+
+/* tailwind inport */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Variables */
+:root {
+  /* color  */
+  --color-primary: #0adab9;
+  --color-secondary: #bfc6d7;
+  --color-pinksale: #f29bc4;
+  --color-pinksaleText: #0D0D0D;
+
+  --color-gray: #6a7ba8;
+  --color-dark: #181830;
+  --color-red: #cc6868;
+
+  --social-bg: #454c5f;
+
+  --bg-dark: #1a1f2c;
+  --bg-gray: #1e2433;
+
+  --border: #272646;
+}
+
+/**================================================== *
+ * ==========  Custom components  ========== *
+ * ================================================== */
+@layer components {
+  /* @TODO: Typography */
+  .paragraph-default {
+    @apply text-[16px] md:text-[18px] leading-[21px] md:leading-[30px] font-normal text-[color:var(--color-secondary)];
+  }
+  .paragraph-large {
+    @apply text-[18px] sm:text-[24px] leading-[24px] sm:leading-[34px] font-normal text-[color:var(--color-secondary)];
+  }
+  .paragraph-small {
+    @apply text-[16px] leading-[21px] font-semibold;
+  }
+  .figure-caption {
+    @apply text-[16px] leading-[22px] font-normal;
+  }
+  .heading-1 {
+    @apply text-[38px] 
+    sm:text-[57px]
+    md:text-[76px] 
+    leading-[49px] 
+    sm:leading-[74px]
+    md:leading-[99px] 
+    font-bold text-white;
+  }
+  .heading-2 {
+    @apply text-[32px] md:text-[57px] leading-[42px] md:leading-[74px] font-bold;
+  }
+  .heading-3 {
+    @apply text-[18px] md:text-[24px] leading-[23px] md:leading-[31px] font-semibold text-[color:var(--color-primary)];
+  }
+  .heading-4 {
+    @apply text-[24px] md:text-[32px] leading-[34px] md:leading-[42px] font-semibold text-white;
+  }
+  .heading-5 {
+    @apply text-[18px] sm:text-[24px] leading-[23px] sm:leading-[31px] font-semibold;
+  }
+  .heading-contract {
+    @apply text-[18px] sm:text-[24px] leading-[23px] sm:leading-[31px] font-semibold;
+  }
+ /* Responsive font sizes for .heading-contract */
+@media (max-width: 320px) {
+  .heading-contract {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .heading-contract {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .heading-contract {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .heading-contract {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heading-contract {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .heading-contract {
+    font-size: 22px;
+  }
+}
+
+  .heading-6 {
+    @apply text-[16px] md:text-[18px] leading-[23px] font-semibold;
+  }
+  .green-text {
+    color: #0adab9;
+  }
+
+  /* @TODO: Button style */
+  .btn {
+    margin-top: 6px;
+    @apply inline-flex items-center justify-center uppercase font-semibold rounded-[5px] gap-1 hover:shadow-[4px_4px_9px_var(--bg-gray)] ease-out hover:translate-y-1 transition-all;
+    font-size: clamp(12px, 2.5vw, 24px);
+    padding: clamp(2px 8px, 5vw 10vw, 10px 20px);
+  }
+    @media (min-width: 1024px) {
+    .btn {
+      font-size: 12px; /* or whatever size you prefer */
+      padding: 2px 8px; /* or whatever size you prefer */
+    }
+  }
+  @media (min-width: 1440px) {
+    .btn {
+      font-size: 16px;  /* adjust as necessary */
+      padding: 10px 20px;  /* adjust as necessary */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .btn {
+      font-size: 14px;  /* adjust as necessary */
+      padding: 12px 18px;  /* adjust as necessary */
+    }
+  }
+    
+  .btn--primary2 {
+      @apply bg-[color:var(--color-pinksale)] text-[color:var(--color-pinksaleText)];
+    }
+  .btn--primary {
+    @apply bg-[color:var(--color-primary)] text-[color:var(--color-dark)];
+  }
+  .btn--bark {
+    @apply bg-[#202636] text-white;
+  }
+  .btn__social {
+    @apply flex items-center justify-center bg-[color:var(--social-bg)] hover:bg-[color:var(--color-primary)] text-white w-8 xl:w-[40px] h-8 xl:h-[40px] hover:text-[color:var(--bg-dark)] rounded-full transition duration-500 ease-in-out;
+  }
+
+  .btn-community {
+    @apply inline-flex justify-center items-center rounded-full hover:shadow-[4px_4px_9px_var(--bg-gray)] ease-out hover:translate-y-1 transition-all;
+  }
+  .input-form {
+    @apply w-full focus-visible:outline-none p-[20px_120px_20px_30px] md:p-[20px_150px_20px_30px] rounded-[10px] border border-[#7C92C8] bg-[#2D364D] text-white placeholder:text-[#7C92C8];
+  }
+  .btn-link {
+    color: #0adab9;
+  }
+  
+  .privacy-btn {
+    /* Additional styles specific to the Privacy Policy button */
+  }
+  
+  .terms-btn {
+    /* Additional styles specific to the Terms button */
+  }
+  
+  .disclaimer-btn {
+    /* Additional styles specific to the Disclaimer button */
+  }
+  
+}
+/* =======  End of Custom components  ======= */
+
+/**================================================== *
+ * ==========  utilities  ========== *
+ * ================================================== */
+@layer utilities {
+  .box-shadow {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.3);
+  }
+}
+/* =======  End of utilities  ======= */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Jost";
+
+  background: var(--bg-dark);
+
+  /* Paragraph Default */
+  @apply paragraph-default;
+
+  scroll-behavior: smooth !important;
+}
+
+.border-round-gradient {
+  border: 0.88px solid;
+
+  background: linear-gradient(0deg, var(--bg-dark), var(--bg-dark)) padding-box,
+    linear-gradient(180deg, #0bdaba -19.75%, #7841e7 100%) border-box;
+
+  border-color: transparent;
+}
+
+/**================================================== *
+ * ==========  hero  ========== *
+ * ================================================== */
+ .hero {
+  background-image: url("./../public/images/header_bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Added property */
+  height: 100vh; /* Added property */
+}
+.coin1,
+.coin3,
+.coin5,
+.coin4,
+.coin7,
+.coin6,
+.coin2,
+.frame1,
+.coin8 {
+  position: absolute;
+}
+.coin1 {
+  top: 24.5%;
+  left: 6.5%;
+}
+.coin3 {
+  top: 41.5%;
+  left: 3.5%;
+}
+.coin5 {
+  top: 40%;
+  left: 14%;
+}
+.coin4 {
+  top: 51%;
+  left: 20.5%;
+}
+.coin7 {
+  top: 30%;
+  right: 5%;
+}
+.coin6 {
+  top: 45%;
+  right: 22%;
+}
+.coin2 {
+  top: 20%;
+  right: 19%;
+}
+.frame1 {
+  top: 30%;
+  left: 28%;
+}
+.coin8 {
+  top: 15%;
+  right: 32.5%;
+}
+
+@media (max-width: 1280px) {
+  .coin4 {
+    top: 55%;
+  }
+  .coin2 {
+    right: 5%;
+  }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+/* =======  End of hero  ======= */
+
+/**================================================== *
+ * ==========  Roadmap  ========== *
+ * ================================================== */
+
+.collumn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  display: block;
+  height: calc(100% / 5 * 5);
+  border: 1px solid var(--bg-gray);
+}
+
+.collumn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--bg-gray);
+}
+
+.steap::after {
+  content: "";
+  position: absolute;
+  /* left: 100%; */
+  background: var(--bg-gray);
+  height: 2px;
+  width: 4rem;
+}
+
+ul li::marker {
+  color: var(--color-primary);
+}
+
+@media (max-width: 767.98px) {
+  .collumn::before,
+  .collumn::after {
+    content: none;
+  }
+  .steap::after {
+    height: 0px;
+    width: 0rem;
+  }
+}
+
+/* =======  End of Roadmap  ======= */
+
+/**================================================== *
+ * ==========  community  ========== *
+ * ================================================== */
+
+.community {
+  background-image: url("../public/images/community_bg_1.png"),
+    url("../public/images/community_bg_2.png");
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+}
+
+/* =======  End of community  ======= */
+
+/**================================================== *
+ * ==========  leaderboard  ========== *
+ * ================================================== */
+
+.leaderboard {
+  background-image: url("../public/images/circle_01.png"),
+    url("../public/images/circle_02.png");
+  background-position: top left, 88% bottom;
+  background-repeat: no-repeat;
+}
+
+/* =======  End of leaderboard  ======= */
+
+/**================================================== *
+ * ==========  Footer  ========== *
+ * ================================================== */
+.footer-bg {
+  background-image: url("../public/images/community_bg_1.png"),
+    url("../public/images/community_bg_2.png");
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* =======  End of Footer  ======= */
+
+
+/* =======  Lottery text container @1024  ======= */
+@media (min-width: 1024px) {
+  .lottery-text-container {
+    /* Add your custom styles here */
+    /* For example, you can reduce the font size and adjust the padding */
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* =======  END of Lottery text container @1024  ======= */
+
+/* ======= TOKEN  ======= */
+.token-component {
+  background: var(--bg-dark);
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  padding: 80px; /* Increase the padding to create more space */
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.token-description-container, .token-presale-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.token-name {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.token-description {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.token-price {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* ======= POPUP  ======= */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.popup-message {
+  margin-bottom: 20px;
+
+}
+
+.nft-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.nft-item {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 320px) {
+  .popup-content {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .popup-content {
+    width: 90%;
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .popup-content {
+    width: 90%;
+    max-width: 425px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .popup-content {
+    width: 90%;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .popup-content {
+    width: 90%;
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .popup-content {
+    width: 90%;
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .popup-content {
+    width: 70%;
+    max-width: 1440px;
+  }
+}
+
+
+/* Add this CSS to your global CSS file or inside a style tag in your component */
+/* Glassmorphism effect for scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.2); /* Set the background color for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0adab9; /* Set the background color for the scrollbar thumb */
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Add a border to the scrollbar thumb */
+}
+
+.btn--whitepaper {
+  /* Additional styles specific to the "View Whitepaper" button */
+  z-index: 10; /* Ensure it's above other elements */
+  position: relative; /* Ensure proper positioning */
+}
