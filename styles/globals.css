@@ -9,21 +9,21 @@
 /* Global Variables */
 :root {
   /* color  */
-  --color-primary: #0adab9;
+  --color-primary: #da0a0a;
   --color-secondary: #bfc6d7;
   --color-pinksale: #f29bc4;
   --color-pinksaleText: #0D0D0D;
 
-  --color-gray: #6a7ba8;
-  --color-dark: #181830;
+  --color-gray: #141414;
+  --color-dark: #000000;
   --color-red: #cc6868;
 
-  --social-bg: #454c5f;
+  --social-bg: #141414;
 
-  --bg-dark: #1a1f2c;
-  --bg-gray: #1e2433;
+  --bg-dark: #0c0a0b;
+  --bg-gray: #141414;
 
-  --border: #272646;
+  --border: #141414;
 }
 
 /**================================================== *
@@ -155,7 +155,7 @@
     @apply inline-flex justify-center items-center rounded-full hover:shadow-[4px_4px_9px_var(--bg-gray)] ease-out hover:translate-y-1 transition-all;
   }
   .input-form {
-    @apply w-full focus-visible:outline-none p-[20px_120px_20px_30px] md:p-[20px_150px_20px_30px] rounded-[10px] border border-[#7C92C8] bg-[#2D364D] text-white placeholder:text-[#7C92C8];
+    @apply w-full focus-visible:outline-none p-[20px_120px_20px_30px] md:p-[20px_150px_20px_30px] rounded-[10px] border border-[#7C92C8] bg-[#141414] text-white placeholder:text-[#7C92C8];
   }
   .btn-link {
     color: #0adab9;
@@ -532,7 +532,7 @@ ul li::marker {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0adab9; /* Set the background color for the scrollbar thumb */
+  background-color: #a00; /* Set the background color for the scrollbar thumb */
   border-radius: 5px;
   border: 2px solid rgba(255, 255, 255, 0.2); /* Add a border to the scrollbar thumb */
 }

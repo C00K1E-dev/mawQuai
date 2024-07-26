@@ -19,7 +19,7 @@ const Lottery = ({ ethereumClient }) => (
             rewarding journey with Mint and Win!
           </p>
           <p className="mt-[10px]">Check out the list of incredible rewards:</p>
-          <div className="flex gap-2 flex-wrap justify-center lg:justify-start rounded-[15px] bg-[#2A3246] p-[20px_15px] sm:p-[30px_20px] mt-[10px]">
+          <div className="flex gap-2 flex-wrap justify-center lg:justify-start rounded-[15px] bg-[#141414] p-[20px_15px] sm:p-[30px_20px] mt-[10px]">
             {[
               ["1 Reward Pack of", "25"],
               ["1 Reward Pack of", "10"],
@@ -34,7 +34,7 @@ const Lottery = ({ ethereumClient }) => (
                   i % 2 !== 0 && "md:flex-row"
                 }`}
               >
-                <span className="w-[9px] h-[9px] rounded-full bg-[#0adab9] text-green-500 text-3xl mr-2 ml-auto"></span>
+                <span className="w-[9px] h-[9px] rounded-full bg-[#a00] text-green-500 text-3xl mr-2 ml-auto"></span>
 
                 <p>
                   {place}:{" "}

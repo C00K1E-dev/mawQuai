@@ -32,8 +32,8 @@ const metadata = {
 const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata });
 
 createWeb3Modal({ metadata, wagmiConfig, projectId, chains, themeMode: 'dark', themeVariables: {
-  '--w3m-accent-fill-color': '#1a1f2c',
-  '--w3m-accent': '#0adab9',
+  '--w3m-accent-fill-color': '#0c0a0b',
+  '--w3m-accent': '#da0a0a',
   '--w3m-font-family': 'jost',
 }});
 

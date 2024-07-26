@@ -3,7 +3,7 @@ import Heading5 from "../headings/Heading5";
 
 const UpcomingLotteryCard = ({ title, nfts, price, avt_img, avt_mp4, currency }) => {
   return (
-    <div className="inline-flex flex-col bg-[#2A3246] rounded-[10px]">
+    <div className="inline-flex flex-col bg-[#141414] rounded-[10px]">
       <div className="inline-flex flex-col items-center p-[10px]">
         {avt_mp4 ? (
           <video

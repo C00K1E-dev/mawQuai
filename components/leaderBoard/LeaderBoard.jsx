@@ -38,7 +38,7 @@ const LeaderBoard = () => {
               {leaderboardData.map((singleData, i) => (
                 <tr
                   key={singleData.user_id}
-                  className="text-center text-white bg-[#2A3246]"
+                  className="text-center text-white bg-[#141414]"
                 >
                   {i <= 2 ? (
                     <td className="p-[15px_24px_15px]">

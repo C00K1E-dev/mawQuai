@@ -72,17 +72,17 @@
 
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after {
-  background: linear-gradient(315deg, #bfc6d7, #181830, #454c5f);
+  background: linear-gradient(315deg, #bfc6d7, #181830, #141414);
 }
 
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after {
-  background: linear-gradient(315deg, #0adab9, #6a7ba8, #454c5f);
+  background: linear-gradient(315deg, #a00, #6a7ba8, #141414);
 }
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after {
-  background: linear-gradient(315deg, #bfc6d7, #0adab9, #454c5f);
+  background: linear-gradient(315deg, #bfc6d7, #0adab9, #141414);
 }
 
 .container .box span {
