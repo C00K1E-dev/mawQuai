@@ -18,7 +18,7 @@ const aboutData = [
   },
   {
     id: "03",
-    title: "Get your reward",
+    title: "Get your rewards",
     img: draw,
   },
 ];
