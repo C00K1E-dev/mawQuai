@@ -27,7 +27,7 @@ const Roadmap = () => {
               >
                 <div className="w-11/12 md:w-1/2">
                   <div
-                    className={`h-[100px] md:h-[170px] w-[100px] md:w-[170px] rounded-full flex items-center justify-center bg-[#141414] outline outline-[20px] outline-[color:var(--bg-gray)]  relative steap ${
+                    className={`h-[100px] md:h-[170px] w-[100px] md:w-[170px] rounded-full flex items-center justify-center border border-round-gradient rounded-full relative steap ${
                       i % 2 === 0
                         ? "after:left-full m-auto md:ml-auto md:mr-5"
                         : "after:right-full m-auto md:mr-auto md:ml-5"

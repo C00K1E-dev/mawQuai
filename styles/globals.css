@@ -204,7 +204,7 @@ body {
   border: 0.88px solid;
 
   background: linear-gradient(0deg, var(--bg-dark), var(--bg-dark)) padding-box,
-    linear-gradient(180deg, #0bdaba -19.75%, #7841e7 100%) border-box;
+    linear-gradient(180deg, #a00 -19.75%, #636363 100%) border-box;
 
   border-color: transparent;
 }

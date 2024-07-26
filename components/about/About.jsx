@@ -33,7 +33,7 @@ const About = () => {
               key={item.id}
               className="flex items-center justify-center flex-col bg-[#141414] rounded-[15px] pt-[40px] lg:pt-[60px] pb-[35px] lg:pb-[55px]"
             >
-              <div className="flex items-center justify-center w-[120px] h-[120px] bg-[#414D6C] rounded-full relative">
+              <div className="flex items-center justify-center w-[120px] h-[120px] bg-[#636363] rounded-full relative">
                 <Image
                   src={item.img}
                   alt={item.title}
