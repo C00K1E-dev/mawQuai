@@ -55,7 +55,7 @@ const LeaderBoard = () => {
                     {singleData.user_id}
                   </td>
                   <td className="p-[15px_24px_15px] text-[color:var(--color-primary)]">
-                    {singleData.nftlottery}BNB
+                    {singleData.nftlottery}QUAI
                   </td>
                 </tr>
               ))}

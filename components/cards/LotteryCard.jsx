@@ -69,7 +69,7 @@ useEffect(() => {
         <div className="border-y border-[#a00] mt-4 p-[10px_0_8px]">
           <Heading6 clr="text-white">
             NFT Price ={" "}
-            <span className="text-[color:var(--color-primary)]">0.13 BNB</span>
+            <span className="text-[color:var(--color-primary)]">0.13 QUAI</span>
           </Heading6>
         </div>
         <div className="my-[30px]">

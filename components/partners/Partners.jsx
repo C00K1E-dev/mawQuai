@@ -20,7 +20,7 @@ const Partners = () => {
   // Array of links corresponding to each partner image
   const partnerLinks = [
     "https://chain.link/",
-    "https://www.bnbchain.org/en/bnb-smart-chain",
+    "https://www.BNBchain.org/en/BNB-smart-chain",
     "https://nftcalendar.io/event/mint-and-win/",
     "https://opensea.io/collection/maw-2",
   ];

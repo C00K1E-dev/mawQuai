@@ -46,7 +46,7 @@ function MintDeluxe() {
     } catch (error) {
       console.error('Error in handleMint:', error.message);
       if (error.message.includes("insufficient funds for gas * price + value")) {
-        setPopupMessage("Insufficient funds. Please make sure you have enough BNB in your wallet.");
+        setPopupMessage("Insufficient funds. Please make sure you have enough QUAI in your wallet.");
       } else if (error.message.includes("User rejected")) {
         setPopupMessage("You have rejected the transaction. No funds were deducted.");
       } else {

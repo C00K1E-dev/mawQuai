@@ -9,7 +9,7 @@ const Intro = ({ imageUrl, text }) => {
                     What is Mint and Win
                 </Heading5>
                 <p className="max-w-[800px] mt-4 sm:mt-6 px-4 sm:px-0 mx-auto">
-                    Mint and Win is poised to revolutionize the BSC ecosystem, offering a unique fusion of NFTs, Metaverse, Rewards, DeFi, and DeSo all in one platform for unparalleled user experience and substantial gains.
+                    Mint and Win is poised to revolutionize the QUAI ecosystem, offering a unique fusion of NFTs, Metaverse, Rewards, DeFi, and DeSo all in one platform for unparalleled user experience and substantial gains.
                 </p>
                 <p className="max-w-[800px] mt-4 sm:mt-6 px-4 sm:px-0 mx-auto">
                     Unlike many projects, we believe in transparency and utility. Our Founder and core developer doesn't hide behind gimmicky images of monkeys or dogs or any other meme token NFTs, nor does he use nicknames. We are dedicated to building a project that stands on its merits and delivers real value to our community.

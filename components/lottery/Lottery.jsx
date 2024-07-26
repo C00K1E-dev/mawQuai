@@ -21,13 +21,13 @@ const Lottery = ({ ethereumClient }) => (
           <p className="mt-[10px]">Check out the list of incredible rewards:</p>
           <div className="flex gap-2 flex-wrap justify-center lg:justify-start rounded-[15px] bg-[#141414] p-[20px_15px] sm:p-[30px_20px] mt-[10px]">
             {[
-              ["1 Reward Pack of", "25"],
-              ["1 Reward Pack of", "10"],
-              ["1 Reward Pack of", "3"],
-              ["25 Reward Packs of", "1"],
-              ["21 Reward Packs of ", "0.5"],
-              ["51 Reward Packs of", "0.32"],
-            ].map(([place, bnb], i) => (
+              ["1 Reward Pack of", "25 "],
+              ["1 Reward Pack of", "10 "],
+              ["1 Reward Pack of", "3 "],
+              ["25 Reward Packs of", "1 "],
+              ["21 Reward Packs of ", "0.5 "],
+              ["51 Reward Packs of", "0.32 "],
+            ].map(([place, QUAI], i) => (
               <div
                 key={i}
                 className={`flex items-center ${
@@ -39,7 +39,7 @@ const Lottery = ({ ethereumClient }) => (
                 <p>
                   {place}:{" "}
                   <span className="text-[color:var(--color-primary)]">
-                    {bnb}BNB
+                    {QUAI}QUAI
                   </span>{" "}
                   <span className="text-green-500 text-3xl"></span>
                 </p>
