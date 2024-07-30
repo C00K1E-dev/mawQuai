@@ -212,13 +212,7 @@ body {
 /**================================================== *
  * ==========  hero  ========== *
  * ================================================== */
- .hero {
-  background-image: url("./../public/images/header_bg.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; /* Added property */
-  height: 100vh; /* Added property */
-}
+
 .coin1,
 .coin3,
 .coin5,
@@ -541,4 +535,34 @@ ul li::marker {
   /* Additional styles specific to the "View Whitepaper" button */
   z-index: 10; /* Ensure it's above other elements */
   position: relative; /* Ensure proper positioning */
+}
+
+
+/* Glowing Border Effect */
+.border-round-gradient {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 185px;
+  padding: 40px 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.border-round-gradient::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border-radius: inherit;
+  background: linear-gradient(45deg, #da0a0a, #f29bc4, #bfc6d7, #ffbaba);
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.border-round-gradient:hover::before {
+  opacity: 1;
+  filter: blur(12px);
 }

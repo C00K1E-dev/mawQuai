@@ -15,7 +15,7 @@ const Community = () => {
           {communityData.map((item) => (
             <div
               key={item.id}
-              className="w-[130px] md:w-[307px] inline-flex flex-col items-center text-center gap-4 md:gap-6 border border-[#141414] rounded-[185px] p-[40px_20px] md:p-[80px_40px]"
+              className="w-[130px] md:w-[307px] inline-flex flex-col items-center text-center gap-4 md:gap-6 border-round-gradient rounded-[185px] p-[40px_20px] md:p-[80px_40px]"
             >
               {item.title === "Telegram" ? (
                 <a
